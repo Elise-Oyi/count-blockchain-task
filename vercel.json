@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "api/graphql/handler.ts",
+        "src": "./api/graphql/handler.ts",
         "use": "@vercel/node"
       }
     ],
