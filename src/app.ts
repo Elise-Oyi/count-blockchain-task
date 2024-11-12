@@ -23,4 +23,11 @@ const startServer = async () => {
   return app;
 };
 
-export default startServer;
+const serverPromise = startServer();
+
+export default async function handler(req: any, res: any) {
+  const app = await serverPromise;
+  app(req, res);
+}
+
+
